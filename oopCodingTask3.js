@@ -29,15 +29,16 @@ class Admin extends User {
         return "Admin";
     }
     sayHello() {
-        return "Hello admin ", username
+        return "Hello admin ", admin
     }
 }
 
 const admin = new Admin("David John")
 const role = admin.expressYourRole();
+helloSayer = admin.sayHello()
 
-console.log(role)
-
+// console.log(role)
+// console.log(helloSayer)
 // § Add a method by the name of expressYourRole(), and make it return the string: "Admin".
 
 
