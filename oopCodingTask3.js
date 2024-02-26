@@ -23,14 +23,21 @@ set username(newUsername) {
 class Admin extends User {
     constructor (username) {
         super(username);
+        this.username = username;
+    }
+    expressYourRole() {
+        return "Admin";
     }
 }
 
-console.log(new Admin('Andyj'))
+const admin = new Admin("David John")
+const role = admin.expressYourRole();
+
+console.log(role)
+
 // § Add a method by the name of expressYourRole(), and make it return the string: "Admin".
-// expressYourRole() {
-//     return Admin()
-// }
+
+
 // § Add to the Admin class another method, sayHello(), that returns the string "Hello admin, XXX" with the username instead of XXX.
 
 // 3. Create an object admin out of the class Admin:
