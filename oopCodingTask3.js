@@ -28,6 +28,9 @@ class Admin extends User {
     expressYourRole() {
         return "Admin";
     }
+    sayHello() {
+        return "Hello admin ", username
+    }
 }
 
 const admin = new Admin("David John")
